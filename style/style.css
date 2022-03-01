@@ -1,0 +1,184 @@
+body {
+    font-family: 'Saira Condensed', sans-serif;
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgba(85, 88, 218, 1) 0%, rgba(95, 209, 249, 1) 100.2%);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.quote-wrapper {
+    width: 50%;
+    position: relative;
+    transition: .5s;
+    margin: 10px 0;
+}
+
+.quote-wrapper .quote-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: .4rem;
+    border-bottom: 1px solid #fefefe;
+    transition: .5s;
+}
+
+.quote-body h3 {
+    color: #5558da;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    align-self: center;
+    text-align: center;
+}
+
+.quote-body h3 span {
+    color: #333;
+    font-size: 2rem;
+}
+
+.quote-body p {
+    font-size: 1.2rem;
+    margin: auto 12px;
+}
+
+.quote-body i.fa {
+    color: #5558da;
+    font-size: 1.5rem;
+}
+
+.quote-body i.fa-quote-left {}
+
+.quote-body i.fa-quote-right {
+    align-self: flex-end;
+}
+
+.quote-body small {
+    font-size: 1.2rem;
+    align-self: flex-end;
+    font-weight: bold;
+    margin: 20px 0 15px 0;
+    font-style: italic;
+}
+
+.control-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #c7c7c7;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.control-btns .left-btns {
+    display: flex;
+}
+
+.control-btns .left-btns button {
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.control-btns .left-btns button i {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #5558da;
+    color: #5558da;
+    width: 40px;
+    transition: .5s;
+}
+
+.control-btns .left-btns button:hover i {
+    color: #fff;
+    background: #5558da;
+}
+
+.control-btns .left-btns button:focus i {
+    color: #fff;
+    background: #5558da;
+}
+
+.control-btns .left-btns button:not(:last-child) {
+    margin-right: 5px;
+}
+
+.next .next-quote {
+    font-size: 16px;
+    padding: 5px 25px;
+    border-radius: 2rem;
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgba(85, 88, 218, 1) 0%, rgba(95, 209, 249, 1) 100.2%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.next .next-quote:hover {
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgba(85, 88, 218, .8) 0%, rgba(95, 209, 249, .8) 100.2%);
+}
+
+@media(max-width:274px) {
+    .next .next-quote {
+        margin-top: 10px;
+    }
+}
+
+.loading {
+    opacity: .8;
+    cursor: no-drop;
+}
+
+@media(max-width:840px) {
+    .quote-wrapper {
+        width: 70%;
+    }
+}
+
+@media(max-width:640px) {
+    .quote-wrapper {
+        width: 85%;
+    }
+}
+
+@media(max-width:440px) {
+    .quote-wrapper {
+        width: 95%;
+    }
+}
+
+.jaafar {
+    margin-top: 10px;
+    padding: 20px 10px;
+    background-color: #FFF;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jaafar .developer {
+    font-size: 20px;
+    color: #5558da;
+    font-weight: bold;
+}
